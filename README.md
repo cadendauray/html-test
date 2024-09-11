@@ -1,2 +1,3 @@
 # html-test
-Basic Demonstration of creating an html project
+ of creating an html project
+Basic Example
