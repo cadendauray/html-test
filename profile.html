@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,42 +7,100 @@
     <meta name="description" content="A historical web page displaying the top NBA players, coaches, and teams from the last 5-10 years">
     <meta name="keywords" content="NBA, All-Star, Championship, Generational Talent, Popularity">
     <title>All About the NBA</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rajdhani', sans-serif;
+        }
+        nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+            background-color: #e9ecef;
+        }
+        h2 {
+            color: #444;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .important {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            filter: contrast(1.2); /* Add contrast to images */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>All About the NBA</h1>
     </header>
-<hr>
+    <nav>
+        <a href="#main-attractions">Main Attractions</a>
+        <a href="#other-stars">Other Stars</a>
+        <a href="#top-teams">Top Teams</a>
+        <a href="#top-coaches">Top Coaches</a>
+    </nav>
+    <hr>
     <main>
- 
-        <section>
+        <section id="main-attractions" class="fade-in">
             <h2>Lebron James, Kobe Bryant, and Steph Curry: The Main Attractions</h2>
-            <p>Lebron James, Kobe Bryant, and Steph Curry are known as the <em>top 3 basketball players</em> of the past 5-10 years. Not only did these players command national attention while they were on the basketball court, they <em>simultaneously</em> grew the game globally and further increased revenue for the NBA.</p>
-            <a href="https://www.espn.com/nba/story/_/id/40616441/ranking-top-25-nba-players-21st-century" >See the top players of the 21st Century</a>
-
+            <p class="highlight">Lebron James, Kobe Bryant, and Steph Curry are known as the <em>top 3 basketball players</em> of the past 5-10 years. Not only did these players command national attention while they were on the basketball court, they <em>simultaneously</em> grew the game globally and further increased revenue for the NBA.</p>
+            <a href="https://www.espn.com/nba/story/_/id/40616441/ranking-top-25-nba-players-21st-century">See the top players of the 21st Century</a>
         </section>
-        
-
-        <section>
+        <section id="other-stars" class="fade-in">
             <h2>Kevin Durant, Carmelo Anthony, and Anthony Davis</h2>
             <p>These star NBA players are also considered world-class talents and impacted a large audience off the court as well. Carmelo Anthony was an unknown player for the New York Knicks, who changed the way basketball was perceived in the NYC area. Kevin Durant and Anthony Davis have won championships and are top talents as well.</p>
         </section>
-<hr>
-        <!-- Lists -->
-        <section>
+        <hr>
+        <section id="top-teams" class="fade-in">
             <h2>The Top Teams of the Past 5-10 Years</h2>
             <ol>
-                <li><b>Los Angeles Lakers</b></li>
+                <li class="important"><b>Los Angeles Lakers</b></li>
                 <li><b>Golden State Warriors</b></li>
                 <li><b>Boston Celtics</b></li>
                 <li><b>Miami Heat</b></li>
-                <li><b>New York Knicks</b>/li>
+                <li><b>New York Knicks</b></li>
             </ol>
         </section>
-        
-
-        <section>
+        <section id="top-coaches" class="fade-in">
             <h2>Top Coaches Last 5-10 Years</h2>
             <ul>
                 <li>Steve Kerr</li>
@@ -51,13 +109,12 @@
                 <li>Tom Thibodeau</li>
             </ul>
         </section>
-<hr>
-        <!-- Photos -->
-        <section>
+        <hr>
+        <section class="gallery fade-in">
             <h2>Gallery</h2>
             <figure>
                 <img src="images/Lebron.jpeg" alt="Lebron James dunking">
-                <figcaption>Lebron James dunkking</figcaption>
+                <figcaption>Lebron James dunking</figcaption>
             </figure>
             <figure>
                 <img src="images/Curry.jpeg" alt="Steph Curry dribbling the ball.">
@@ -69,8 +126,10 @@
             </figure>
         </section>
     </main>
-<hr>
+    <hr>
     <footer>
         <p>Clearly displayed there were many influential players, coaches, and teams that changed the way basketball is perceived in our modern society. With the prominence of social media, NBA stars are only going to continue to rise above on the national stage and grow the game globally for years to come.</p>
         <a href="https://www.nba.com/">Visit the NBA's site for more information.</a>
     </footer>
+</body>
+</html>
