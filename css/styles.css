@@ -8,6 +8,7 @@ nav {
     background-color: #f8f9fa;
     padding: 10px;
 }
+body {background-color: tan;}
 nav a {
     color: #333;
     text-decoration: none;
@@ -27,7 +28,7 @@ p {
     line-height: 1.6;
 }
 .highlight {
-    background-color: #f0f0f0;
+    background-color: #fbf300;
     padding: 10px;
 }
 .important {
@@ -44,6 +45,11 @@ p {
     height: auto;
     filter: contrast(1.2); /* Add contrast to images */
 }
+
+.red-border {
+    border: 2px solid red
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
