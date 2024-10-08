@@ -11,7 +11,6 @@ nav {
 body {background-color: rgb(216, 216, 216);}
 nav a {
     color: #333;
-    text-decoration: none;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
