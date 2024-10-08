@@ -15,7 +15,6 @@ nav a {
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
 }
 nav a:hover {
     color: #007BFF;
@@ -51,9 +50,4 @@ p {
 
 .red-border {
     border: 2px solid red
-}
-
-
-.fade-in {
-    animation: fadeIn 2s ease-in-out;
 }
