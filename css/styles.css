@@ -21,7 +21,7 @@ nav a:hover {
     color: #007BFF;
     background-color: #e9ecef;
 }
-h2 {
+h2 { text-align: center;
     color: #444;
 }
 p {
